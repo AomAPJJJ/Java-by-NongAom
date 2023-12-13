@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fox Tinder</title>
+  </head>
+  <style>
+    .fox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      padding: 16px;
+      border: 1px solid black;
+      width: fit-content;
+    }
+    .likedFoxs {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  </style>
+  <body>
+    <div>
+      <div id="newFox">
+        <h2>Fox:</h2>
+        <img id="newFoxImage" src="https://randomfox.ca/images/85.jpg" alt="Fox Image" width="300px"/>
+        <button id="likeNewFoxButton">Like</button>
+        <button id="unlikeNewFoxButton">Unlike</button>
+      </div>
+      <h1>Your Matched Fox</h1>
+      <div id="summaryFox">
+        <button id="clearFoxButton">Clear All Fox</button>
+        <p id="likedCount">Number of Liked Foxs:</p>
+        <p id="unlikedCount">Number of Unliked Foxs:</p>
+      </div>
+      <div id="likedFoxs" class="likedFoxs"></div>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
